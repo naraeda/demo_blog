@@ -1,4 +1,4 @@
-<% content_for :page_title, "Create a New Post" %>
+<% content_for :page_title, "Edit Post" %>
 
 <div class="section">
     <%= simple_form_for @post do |f| %>
@@ -12,6 +12,6 @@
                 <%= f.input :content, input_html: { class: 'textarea' }, wrapper: false, label_html: { class: 'label' } %>
             </div>
         </div>
-    <%= f.button :submit, 'Create New Post', class: "button is-primary" %>
+    <%= f.button :submit, 'Edit Post', class: "button is-primary" %>
     <% end %>
 </div>
